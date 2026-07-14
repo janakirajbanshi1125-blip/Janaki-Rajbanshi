@@ -1,0 +1,32 @@
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    margin:0;
+}
+
+/* Header */
+header{
+    background:#1f4e79;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* About Section */
+.about{
+    width:80%;
+    margin:40px auto;
+    background:lightblue;
+    border:2px solid navy;
+    border-radius:10px;
+    padding:20px;
+    text-align:center;
+}
+
+/* Footer */
+footer{
+    background:#1f4e79;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
