@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 400px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        .gender {
+            width: auto;
+        }
+
+        .checkbox {
+            width: auto;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+
+    <form action="#" method="post">
+
+        <!-- Name -->
+        <label>Full Name</label>
+        <input type="text"
+               name="fullname"
+               placeholder="Enter your name"
+               required
+               minlength="3"
+               pattern="[A-Za-z ]+"
+               title="Only letters and spaces are allowed">
+
+        <!-- Email -->
+        <label>Email</label>
+        <input type="email"
+               name="email"
+               placeholder="example@gmail.com"
+               required>
+
+        <!-- Password -->
+        <label>Password</label>
+        <input type="password"
+               name="password"
+               required
+               minlength="8"
+               placeholder="Minimum 8 characters">
+
+        <!-- Age -->
+        <label>Age</label>
+        <input type="number"
+               name="age"
+               min="18"
+               max="100"
+               required>
+
+        <!-- Phone -->
+        <label>Phone Number</label>
+        <input type="tel"
+               name="phone"
+               placeholder="9801234567"
+               pattern="[0-9]{10}"
+               required
+               title="Enter a 10-digit phone number">
+
+        <!-- Gender -->
+        <label>Gender</label>
+
+        <input class="gender" type="radio" name="gender" value="Male" required> Male
+        <input class="gender" type="radio" name="gender" value="Female"> Female
+        <input class="gender" type="radio" name="gender" value="Other"> Other
+
+        <!-- Date of Birth -->
+        <label>Date of Birth</label>
+        <input type="date"
+               name="dob"
+               required>
+
+        <!-- Country -->
+        <label>Country</label>
+        <select name="country" required>
+            <option value="">--Select Country--</option>
+            <option>Nepal</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>Canada</option>
+            <option>Australia</option>
+        </select>
+
+        <!-- Terms -->
+        <br><br>
+        <input class="checkbox" type="checkbox" required>
+        I agree to the Terms and Conditions
+
+        <!-- Submit -->
+        <button type="submit">Register</button>
+
+    </form>
+</div>
+
+</body>
+</html>

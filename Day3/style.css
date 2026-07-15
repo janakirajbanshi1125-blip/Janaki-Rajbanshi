@@ -1,0 +1,53 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+/* Header */
+header{
+    background:#1f4e79;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    margin-bottom:10px;
+}
+
+/* Section Box */
+.about{
+    width:80%;
+    margin:40px auto;
+    background:#d9f2ff;       /* Light blue */
+    border:2px solid #1f4e79;
+    border-radius:12px;
+    padding:45px;
+    text-align:left;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.about h2{
+    color:#1f4e79;
+    margin-bottom:15px;
+}
+
+.about p{
+    font-size:17px;
+    line-height:1.7;
+}
+
+/* Footer */
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:50px;
+}
