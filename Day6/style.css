@@ -1,0 +1,238 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    background:linear-gradient(135deg,#161b22,#1f2937,#2563eb);
+
+    color:white;
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* GitHub Logo */
+
+.github-logo{
+
+    position:absolute;
+
+    top:20px;
+
+    left:25px;
+
+}
+
+.github-logo img{
+
+    width:55px;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.github-logo img:hover{
+
+    transform:scale(1.1) rotate(10deg);
+
+}
+
+/* Main Layout */
+
+.container{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:80px;
+
+    padding:40px;
+
+}
+
+/* Center Content */
+
+.hero{
+
+    width:520px;
+
+    text-align:center;
+
+}
+
+.hero h1{
+
+    font-size:72px;
+
+    color:#FFD43B;
+
+    margin-bottom:18px;
+
+    text-shadow:2px 2px 12px rgba(0,0,0,.4);
+
+}
+
+.hero p{
+
+    font-size:25px;
+
+    color:#dbeafe;
+
+    letter-spacing:1px;
+
+}
+
+/* Sidebar */
+
+aside{
+
+    width:240px;
+
+    height:360px;
+
+    overflow-y:auto;
+
+    background:rgba(255,255,255,.10);
+
+    border-radius:15px;
+
+    padding:20px;
+
+    border:1px solid rgba(255,255,255,.2);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+
+}
+
+aside h3{
+
+    text-align:center;
+
+    margin-bottom:18px;
+
+    color:#FFD43B;
+
+    font-size:26px;
+
+}
+
+aside ul{
+
+    list-style:none;
+
+}
+
+aside li{
+
+    padding:10px;
+
+    margin:8px 0;
+
+    border-radius:8px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.06);
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+aside li:hover{
+
+    background:#FFD43B;
+
+    color:#161b22;
+
+    transform:translateX(-5px);
+
+}
+
+/* Scrollbar */
+
+aside::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+aside::-webkit-scrollbar-thumb{
+
+    background:#FFD43B;
+
+    border-radius:10px;
+
+}
+
+/* Footer */
+
+footer{
+
+    text-align:center;
+
+    padding:50px;
+
+    background:#0d1117;
+
+    color:#dbeafe;
+
+    font-size:15px;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.container{
+
+    flex-direction:column;
+
+    gap:40px;
+
+}
+
+.hero{
+
+    width:100%;
+
+}
+
+.hero h1{
+
+    font-size:52px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+}
+
+aside{
+
+    width:90%;
+
+    height:300px;
+
+}
+
+}
