@@ -3,22 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Input Echo</title>
+    <title>Live Input Echo & Password Strength Checker</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <div class="container">
 
-<h1>Live Greeting</h1>
+    <h1>Live Input Practice</h1>
 
-<input
-type="text"
-id="name"
-placeholder="Enter your name"
-onkeyup="showName()">
+    <h2>Live Greeting</h2>
 
-<p id="message">Hello!</p>
+    <input
+        type="text"
+        id="name"
+        placeholder="Enter your name"
+        oninput="showGreeting()">
+
+    <p id="greeting">Hello!</p>
+
+    <hr>
+
+    <h2>Password Strength Checker</h2>
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Enter Password"
+        oninput="checkPassword()">
+
+    <p id="message">Weak</p>
+
+    <div class="rules">
+        ✔ Minimum 6 characters <br>
+        ✔ Must contain at least one number <br>
+        ✔ Spaces are not allowed
+    </div>
 
 </div>
 

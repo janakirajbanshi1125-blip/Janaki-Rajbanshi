@@ -3,17 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Click Counter</title>
+    <title>Counter With Limits</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-    <h1>Click Counter</h1>
+
+    <h1>Counter With Limits</h1>
+
+    <p class="info">
+        Counter Range: 0 - 10
+    </p>
 
     <h2 id="count">0</h2>
 
-    <button onclick="increaseCount()">Click Me</button>
+    <div class="buttons">
+
+        <button
+            id="decreaseBtn"
+            onclick="decreaseCount()"
+            disabled>
+            −
+        </button>
+
+        <button
+            id="increaseBtn"
+            onclick="increaseCount()">
+            +
+        </button>
+
+    </div>
+
 </div>
 
 <script src="script.js"></script>
